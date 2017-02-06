@@ -70,6 +70,8 @@ echo "Installing browsers"
 sudo aura -A   --noconfirm --needed google-chrome
 sudo pacman -S --noconfirm --needed firefox
 sudo aura -A   --noconfirm --needed google-talkplugin
+sudo aura -A   --noconfirm --needed lastpass
+sudo aura -A   --noconfirm --needed lastpass-cli
 
 echo "Installing productivity related software"
 sudo aura -A --noconfirm --needed rescuetime
@@ -80,6 +82,15 @@ sudo systemctl enable gdm
 
 echo "Updating all packages"
 sudo pacman -Syu --noconfirm
+
+echo "Downloading the post-gui-installation.sh"
+curl -s https://raw.githubusercontent.com/squiter/arch-setup/master/post-gui-installation.sh > post-gui-installation.sh
+chmod +x post-gui-installation.sh
+
+echo "================================================================================"
+echo "Now you have a post-gui-installation.sh copied in your home directory."
+echo "Reboot your PC and run this shell script to finish the installation."
+echo "================================================================================"
 
 echo "Done!"
 exit 0
