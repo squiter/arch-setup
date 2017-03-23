@@ -81,6 +81,12 @@ echo "Activate needed services"
 sudo systemctl enable NetworkManager.service
 sudo systemctl enable gdm
 
+echo "Installing PIP and Wakatime"
+curl -O https://bootstrap.pypa.io/get-pip.py
+sudo python get-pip.py
+rm get-pip.py
+sudo pip install wakatime
+
 echo "Updating all packages"
 sudo pacman -Syu --noconfirm
 
