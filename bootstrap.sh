@@ -75,6 +75,7 @@ sudo aura -A   --noconfirm --needed lastpass-cli
 
 echo "Installing productivity related software"
 sudo aura -A --noconfirm --needed rescuetime
+sudo aura -A --noconfirm --needed gnome-shell-extension-caffeine-git
 
 echo "Activate needed services"
 sudo systemctl enable NetworkManager.service
