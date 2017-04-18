@@ -42,3 +42,6 @@ export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
 # NPM
 export PATH=~/.npm-global/bin:$PATH
+
+# Terminator tab/title naming
+set_title() { printf "\e]2;$*\a"; }
