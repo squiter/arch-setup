@@ -64,6 +64,11 @@ sudo pacman -S --noconfirm --needed pidgin
 sudo aura   -A --noconfirm --needed dropbox
 sudo aura   -A --noconfirm --needed forticlientsslvpn
 
+echo "installing dictionary apps"
+sudo pacman -S --noconfirm --needed aspell
+sudo pacman -S --noconfirm --needed aspell-en
+sudo pacman -S --noconfirm --needed aspell-pt
+
 echo "Installing video software"
 sudo pacman -S --noconfirm --needed vlc
 
