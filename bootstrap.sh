@@ -47,6 +47,7 @@ sudo pacman -S --noconfirm --needed vim
 sudo pacman -S --noconfirm --needed xclip
 sudo pacman -S --noconfirm --needed bash-completion # confirm!
 sudo pacman -S --noconfirm --needed terminator
+sudo pacman -S --noconfirm --needed the_silver_searcher
 sudo aura   -A --noconfirm --needed rbenv ruby-build
 
 echo "Installing Languages"
