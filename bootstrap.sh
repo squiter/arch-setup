@@ -61,9 +61,9 @@ sudo pacman -S --noconfirm --needed docker-compose
 echo "Installing common software"
 sudo pacman -S --noconfirm --needed gimp
 sudo pacman -S --noconfirm --needed inkscape
-sudo pacman -S --noconfirm --needed pidgin
+# sudo pacman -S --noconfirm --needed pidgin
 sudo aura   -A --noconfirm --needed dropbox
-sudo aura   -A --noconfirm --needed forticlientsslvpn
+# sudo aura   -A --noconfirm --needed forticlientsslvpn
 
 echo "installing dictionary apps"
 sudo pacman -S --noconfirm --needed aspell
